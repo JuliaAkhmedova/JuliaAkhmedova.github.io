@@ -1,0 +1,81 @@
+.tile {
+  transform: scale(0);
+  transition: all 0.3s ease;
+ 
+
+  &.promoted {
+    width: 100%;
+  }
+  
+  &.branding .block {
+    background: #ccc;
+  }
+  
+  &.design .block {
+    background: pink;
+  }
+  
+  &.web .block {
+    background: yellow;
+  }
+}
+
+.scale-anm {
+  transform: scale(1);
+}
+
+.animate {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(40px);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//
+//#button__scrol {
+//display:none;
+//	text-decoration:none;
+//	position:fixed;
+//	bottom:10px;
+//	right:10px;
+//	overflow:hidden;
+//	width:51px;
+//	height:51px;
+//	border:none;
+//	text-indent:100%;
+//	background:url(../../img/ui.totop.png) no-repeat left top;
+//    &:hover{
+//
+//	background:url(../../img/ui.totop.png) no-repeat left -51px;
+//	width:51px;
+//	height:51px;
+//	display:block;
+//	overflow:hidden;
+//	float:left;
+//	opacity: 0;
+//	-moz-opacity: 0;
+//	filter:alpha(opacity=0);
+//    }
+//    &:active, #toTop:focus {
+//	outline:none;
+//}
+//}
+
+#scrollup {
+display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../../img/icon_top.png) no-repeat left top;
+    opacity: 0.8;
+}
