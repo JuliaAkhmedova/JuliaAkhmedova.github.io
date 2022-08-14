@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuda</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="fonts/TitilliumWeb/stylesheet.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() != 0) {
+                    $('#scrollup').fadeIn();
+                } else {
+                    $('#scrollup').fadeOut();
+                }
+            });
+
+            $('#scrollup').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <!--Header-->
+    <header style="background-color: #87509c;">
+        <div class="container">
+            <a href="#"><img src="img/logo.png" alt="Cuda" class="header__logo" width="118px" height="37px"></a>
+
+            <div class="header__menu">
+                <div class="header__menu-button">
+                    <!--    <i class="fas fa-adjust nav-mobile-bar"></i> -->
+                    <svg width="53" height="35" viewBox="0 0 53 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 51.5 17.5 H 9" />
+                        <path d="M 32 29 L 9 5  C 0 -4 -3 10 9 10 H 32" />
+                        <path d="M 32 6  L 9 30 C 0 39 -3 25 9 25 H 32" />
+                    </svg>
+                </div>
+
+                <nav class="header__menu-mobile">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#command">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="header__text">
+                <h1>Hi there! We are the new kids on the block
+                    and we build awesome websites and mobile apps.</h1>
+            </div>
+            <a href="#" class="button">WORK WITH US!</a>
+        </div>
+    </header>
+    <!-- End Header-->
+
+    <!--Main-->
+    <main>
+        <!--Services we provide-->
+        <article class="services tile scale-anm">
+            <div class="container block animate" id="services">
+                <div>
+                    <div>
+                        <h2>Services we provide</h2>
+                        <p class="main__title">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <img src="img/icon/Flag.png">
+                            <p class="services__title">Branding</p>
+                            <p class="services__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <img src="img/icon/Crayon.png">
+                            <p class="services__title">Design</p>
+                            <p class="services__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <img src="img/icon/Gears.png">
+                            <p class="services__title">Development</p>
+                            <p class="services__text">At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <img src="img/icon/Rocket.png">
+                            <p class="services__title">ROCKET SCIENCE</p>
+                            <p class="services__text">Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!--End Services we provide-->
+
+        <!--Command-->
+        <article class="command tile scale-anm">
+            <div class="container  block animate" id="command">
+                <div>
+                    <h2>Meet our beautiful team</h2>
+                    <p class="main__title">We are a small team of designers and developers, who help brands with big ideas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <img src="img/people/anne.png">
+                        <p class="command__title">Anne Hathaway</p>
+                        <p class="command__professional">CEO / Marketing Guru</p>
+                        <p class="command__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <img src="img/people/kate.png">
+                        <p class="command__title">Kate Upton</p>
+                        <p class="command__professional">Creative Director
+                        <p>
+                        <p class="command__text">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <img src="img/people/olivia.png">
+                        <p class="command__title">Olivia Wilde</p>
+                        <p class="command__professional">Lead Designer</p>
+                        <p class="command__text">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <img src="img/people/ashley.png">
+                        <p class="command__title">Ashley Greene</p>
+                        <p class="command__professional">SEO / Developer</p>
+                        <p class="command__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!--End Command-->
+
+        <!--Skills-->
+        <article class="skills tile scale-anm">
+            <div class="container  block animate">
+                <div>
+                    <h2>WE GOT SKILLS!</h2>
+                    <p class="main__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-12  col-md-6 col-lg-3">
+                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle-chart__background" stroke="#dfe8ed" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="circle-chart__circle" stroke="#30bae7" stroke-width="2" stroke-dasharray="90,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="circle-chart__info">
+                                <text class="circle-chart__percent" x="18" y="16.5" alignment-baseline="central" text-anchor="middle" font-size="10">90%</text>
+                            </g>
+                        </svg>
+                        <p class="skills__title">web desigh</p>
+                    </div>
+
+                    <div class="col-12  col-md-6 col-lg-3">
+                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle-chart__background" stroke="#dfe8ed" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="circle-chart__circle" stroke="#d74680" stroke-width="2" stroke-dasharray="75,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="circle-chart__info">
+                                <text class="circle-chart__percent" x="18" y="16.5" alignment-baseline="central" text-anchor="middle" font-size="10">75%</text>
+                            </g>
+                        </svg>
+                        <p class="skills__title">HTML / CSS</p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle-chart__background" stroke="#dfe8ed" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="circle-chart__circle" stroke="#15c7a8" stroke-width="2" stroke-dasharray="70,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="circle-chart__info">
+                                <text class="circle-chart__percent" x="18" y="16.5" alignment-baseline="central" text-anchor="middle" font-size="10">70%</text>
+                            </g>
+                        </svg>
+                        <p class="skills__title">GRAPHIC DESIGN</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle-chart__background" stroke="#dfe8ed" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <circle class="circle-chart__circle" stroke="#ee936a" stroke-width="2" stroke-dasharray="85,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <g class="circle-chart__info">
+                                <text class="circle-chart__percent" x="18" y="16.5" alignment-baseline="central" text-anchor="middle" font-size="10">85%</text>
+                            </g>
+
+                        </svg>
+                        <p class="skills__title">UI / UX</p>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+        <!--End Skills-->
+
+        <!--Portfolio-->
+        <article class="portfolio tile scale-anm" >
+            <div class="container block animate" id="work">
+                <div>
+                    <h2>Our Portfolio</h2>
+                    <p class="main__title">Neque porro quisquam est, qui dolorem ipsum quia dolor sit ametconsectetur, adipisci velit, sed quia non numquam</p>
+                </div>
+                <div class="toolbar mb2 mt2">
+                    <button class="btn fil-cat" href="" data-rel="all">ALL</button>
+                    <button class="btn fil-cat" data-rel="apps">APPS</button>
+                    <button class="btn fil-cat" data-rel="web">WEB</button>
+                    <button class="btn fil-cat" data-rel="icons">ICONS</button>
+                </div>
+                <div class="row" id="portfolio">
+
+                    <div class="col-md-12 col-lg-6 tile scale-anm web all">
+                        <img src="img/portfolio/1.png" alt="" width="100%">
+                        <p class="main__title">Isometric Perspective Mock-Up</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 tile scale-anm icons all">
+                        <img src="img/portfolio/2.png" alt="" width="100%">
+                        <p class="main__title">Time Zone App UI</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 tile scale-anm apps all promoted">
+                        <img src="img/portfolio/3.png" alt="" width="100%">
+                        <p class="main__title">Viro Media Players UI</p>
+                    </div>
+                    <div class="col-md-12 col-lg-6 tile scale-anm apps all promoted">
+                        <img src="img/portfolio/4.png" alt="" width="100%">
+                        <p class="main__title">Blog / Magazine Flat UI Kit</p>
+                    </div>
+                </div>
+
+                <a href="#" class="button portfolio__button">LOAD MORE PROJECTS</a>
+            </div>
+        </article>
+        <!--End Portfolio-->
+
+        <!--About-->
+        <article class="about tile scale-anm">
+            <div class="container block animate" id="blog">
+                <div>
+                    <h2>WHAT POEPLE SAY ABOUT US</h2>
+                    <p class="main__title">Our clients love us!</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-1">
+                        <img src="img/people/chanel.png">
+                    </div>
+                    <div class="col-md-9 col-lg-5" id="about-left">
+                        <p class="about__text">Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.</p>
+                        <p class="about__name">Chanel Iman</p>
+                        <p class="about__profession">CEO of Pinterest</p>
+                    </div>
+
+
+                    <div class="col-md-3 col-lg-1">
+                        <img src="img/people/adriana.png">
+                    </div>
+                    <div class="col-md-9 col-lg-5" id="about-left">
+                        <p class="about__text">Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.</p>
+                        <p class="about__name">ADRIANA LIMA</p>
+                        <p class="about__profession">Founder of Instagram</p>
+                    </div>
+
+
+                    <div class="col-md-3 col-lg-1">
+                        <img src="img/people/emilia.png">
+                    </div>
+                    <div class="col-md-9 col-lg-5" id="about-left">
+                        <p class="about__text">Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.</p>
+                        <p class="about__name">emilia clarke</p>
+                        <p class="about__profession">Lead Designer at Behance</p>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-lg-1">
+                        <img src="img/people/emma.png">
+                    </div>
+                    <div class="col-md-9 col-lg-5" id="about-left">
+                        <p class="about__text">Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.</p>
+                        <p class="about__name">EMMA STONE</p>
+                        <p class="about__profession">EMMA STONE</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!--End About-->
+        <!--Сontact Form-->
+        <article class="form tile scale-anm">
+            <div class="container block animate" id="contact">
+                <div>
+                    <h2>GET IN TOUCH</h2>
+                    <p class="main__title">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+                </div>
+
+                <form class="contact-form" id="contact-form" action="php/mail.php" method="post">
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Cuda">
+                    <input type="hidden" name="form_from" value="http://cuda/">
+                    <!--маенять домен сайта-->
+                    <input type="hidden" name="admin_email" value="koichikidzuki7@gmail.com">
+                    <input type="hidden" name="form_subject" value="Сообщение с сайта">
+                    <!-- END Hidden Required Fields -->
+
+                    <div class="clearfix contact-form-width">
+                        <div class="contact-form__input-position">
+                            <input type="text" class="contact-form__input" name="name" placeholder="" required>
+                            <div class="placeholder">Your Name<span class="red">*</span></div>
+                        </div>
+
+                        <div class="contact-form__input-position">
+                            <input type="text" class="contact-form__input" name="email" placeholder="" required>
+                            <div class="placeholder">Your Email<span class="red">*</span></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__textarea-position">
+                        <textarea type="text" class="contact-form__textarea contact-form__input" placeholder="" name="message" required></textarea>
+                        <div class="placeholder">Your Message<span class="red">*</span></div>
+                    </div>
+
+                    <input type="submit" class="button form__button" name="" value="SEND MESSAGE">
+                </form>
+                <div id="answer"></div>
+
+            </div>
+        </article>
+        <!--End Сontact Form-->
+    </main>
+    <!--End Main-->
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Google&#43;</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Dribbble</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+    <script src="node_modules/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+    <div id="scrollup"></div>
+
+</body></html>
