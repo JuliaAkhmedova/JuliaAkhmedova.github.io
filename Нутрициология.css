@@ -380,11 +380,12 @@
 
   .u-section-1 .u-shape-3 {
     width: calc(((100% - 340px) / 2) + 81px);
-    margin-top: 188px;
+    height: 77px;
+    margin-top: 179px;
   }
 
   .u-section-1 .u-shape-4 {
-    width: calc(((100% - 340px) / 2) + 137px);
-    margin-top: -346px;
+    width: calc(((100% - 340px) / 2) + 119px);
+    margin-top: -339px;
   }
 }
