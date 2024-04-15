@@ -8,15 +8,13 @@
     <meta charset="utf-8">
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
     <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -25,8 +23,10 @@
 
   </head>
   <body>
+
+
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
+<!--     <div class="preloader">
       <div class="preloader-logo"><img src="images/logo-default-151x44.png" alt="" width="151" height="44" srcset="images/logo-default-151x44.png 2x"/>
       </div>
       <div class="preloader-body">
@@ -34,7 +34,7 @@
           <div class="loadingProgressG" id="loadingProgressG_1"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="page">
 
       <header class="section novi-background page-header">
@@ -90,280 +90,239 @@
           </nav>
         </div>
       </header>
-      <section class="section swiper-container swiper-slider swiper-slider-minimal" data-loop="true" data-slide-effect="fade" data-autoplay="4759" data-simulate-touch="true">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide_video" data-slide-bg="images/5-28.jpg">
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Правильный выбор</div>
+    <div>
+
+      <section class="section novi-background section-sm ">
+        <div class="container section-sm">
+          <div class="col-lg-12">
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Главная</a></li>
+              <li class="active">Проект "Тахо"</li>
+            </ul>
+
+            <h3>Проект "Тахо"</h3>
+          </div>
+          <div class="row mt30">
+            <div class="col-lg-12">
+              <div class="row row-30 plr15">
+                <div class="col-md-8">
+                  <script  type="text/javascript">
+                    $(document).ready(function() {
+                    $(".slider-for").slick({
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      speed: 500,
+                      fade: true,
+                      asNavFor: ".slider-nav"
+                    });
+                    $(".slider-nav").slick({
+                      slidesToShow: 5,
+                      slidesToScroll: 1,
+                      speed: 500,
+                      asNavFor: ".slider-for",
+                      dots: true,
+                      centerMode: true,
+                      focusOnSelect: true,
+                      slide: "div"
+                    });
+                    });
+
+                    $(document).ready(function() {
+                      $('[data-fancybox').fancybox({
+                        loop: true
+                      });
+                    });
+
+                </script>
+
+                <div class="content">
+                  <div class="slider slider-for">
+                      <a href="images/taho/5-21.jpg" data-fancybox="gallery"><img src="images/taho/5-21.jpg" alt="" width="770" height="456"></a>
+                      <a href="images/taho/6-14.jpg" data-fancybox="gallery"><img src="images/taho/6-14.jpg" alt="" width="770" height="456"></a>
+                      <a href="images/taho/0-13.jpg" data-fancybox="gallery"><img src="images/taho/0-13.jpg" alt="" width="770" height="456"></a>
+                      <a href="images/taho/1-14.jpg" data-fancybox="gallery"><img src="images/taho/1-14.jpg" alt="" width="770" height="456"></a>
+                      <a href="images/taho/2-16.jpg" data-fancybox="gallery"><img src="images/taho/2-16.jpg" alt="" width="770" height="456"></a>
+                      <a href="images/taho/3-14.jpg" data-fancybox="gallery"><img src="images/taho/3-14.jpg" alt="" width="770" height="456"></a>
+                  </div>
+                  <div class="slider slider-nav">
+                    <div>
+                      <img src="images/taho/5-21.jpg" alt="" width="220" height="220"/>
+                    </div>
+                    <div>
+                     <img src="images/taho/6-14.jpg" alt="" width="220" height="220"/>
+                    </div>
+                    <div>
+                      <img src="images/taho/0-13.jpg" alt="" width="220" height="220"/>
+                    </div>
+                    <div>
+                     <img src="images/taho/1-14.jpg" alt="" width="220" height="220"/>
+                    </div>
+                    <div>
+                      <img src="images/taho/2-16.jpg" alt="" width="220" height="220"/>
+                    </div>
+                    <div>
+                      <img src="images/taho/3-14.jpg" alt="" width="220" height="220"/>
+                    </div>
+                  </div>
                 </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">iN House</span></h1>
-                <p class="text-white wow-outer"><span class="wow slideInDown" data-wow-delay=".35s">Готовое решение по загородным домам.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">Получить проекты домов</a></div>
+
+                </div>
+                <div class="col-md-4 post-modern wow slideInRight">
+                  <h4>Характеристики</h4>
+
+                  <div class="post-modern-product">
+                  <p class="post-modern-p"><span class="fa-arrows-v icon_span"></span>Габариты <span class="post-modern-span">6х7,6 м</span></p>
+                  <p class="post-modern-p"><span class="fa-arrows icon_span"></span>Общая площадь <span class="post-modern-span">56,4 м2</span></p>
+                  <p class="post-modern-p"><span class="fa-bed icon_span"></span>Комнат <span class="post-modern-span">3</span></p>
+                  <p class="post-modern-p"><span class="fa-bath icon_span"></span>Санузлов <span class="post-modern-span">1</span></p>
+                  <p class="post-modern-p"><span class="fa-bars icon_span"></span>Этажей <span class="post-modern-span">2</span></p>
+                  <p class="post-modern-p"><span class="fa-clock-o icon_span"></span>Сроки до <span class="post-modern-span">60 дней</span></p>
+                  </div>
+
+                  <a class="button-winona mt30" href="#"><div class="content-original font-size-18">от 2 200 000₽ под ключ</div><div class="content-dubbed font-size-18">от 2 200 000₽ под ключ</div></a>
+                  <a class="button button-primary button-winona button-md width100" data-fancybox href="#modal"><div class="content-original">Оставить заявку</div><div class="content-dubbed">Оставить заявку</div></a>
+
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide" data-slide-bg="images/5-28.jpg">
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Дом под ключ</div>
-                </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">за 2 месяца от 4,5млн</span></h1>
-                <p class="text-white wow-outer"><span class="wow slideInDown" data-wow-delay=".35s">Гарантия от 5 лет. Отчетность на каждом этапе работ.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">Получить проекты домов</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination-outer container">
-          <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
         </div>
       </section>
-      <section class="section novi-background section-md text-center">
+
+      <section class="section novi-background section-sm bg-gray-100">
         <div class="container">
-          <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Проекты домов</span></h3>
-          <div class="row row-lg-50 row-35 offset-top-2">
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="catalog-thako.html"><img src="images/5-7.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="catalog-thako.html">Гэрднер</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">от 7 200 000₽/под ключ</a></li>
-                  <!-- <li>30 Sq. Ft.</li> -->
-                  <!-- <li>3 Bedrooms</li> -->
-                </ul>
-                <!-- <p>A comfortable residential property located in a quiet and cozy area.</p> -->
-                <a class="button button-primary button-winona button-md" data-fancybox href="#modal">Записаться на экскурсию</a>
-              </article>
+          <h3 class="text-center"><span class="wow slideInDown">Описание проекта "Тахо (Tahoe)"</span></h3>
+          <div class="row">
+                <div class="col-md-12">
+                  <p class="about-subtitle">Проект мини-дома A-фрейм под названием "Тахо" обладает удивительной эргономикой - все необходимое для комфортной жизни умещено на небольшой площади. Не каждый мини-дом может похвастаться такой продуманностью!
+                  <br>
+                  Благодаря компактным размерам, данный дом идеально подходит для размещения на небольших участках.
+                  <br>
+                  "Тахо" примечателен тем, что на 56 м2 удачно зонированы все необходимые пространства, что обеспечит комфортную жизнь даже для небольшой семьи.
+                  <br>
+                  Основное преимущество планировки заключается в следующем: переступив порог дома, вы сразу окажетесь в большом открытом пространстве с панорамными окнами от пола до потолка. Общая площадь кухни-гостиной составляет 25,05 м2 и включает в себя зону кухни, обеденную зону и комфортабельный лаунж. Продолжением лаунж-зоны является просторная открытая терраса (9,54 м2), где можно организовать уютный вечер с барбекю или наслаждаться утренними лучами солнца, расположившись на шезлонге. За компактной лестницей, ведущей на мезонин, находится большой санузел (5,55 м2) с достаточным пространством для установки душевой кабины или ванны, раковины, унитаза и стиральной машины.
+                  <br>
+                  В доме предусмотрен удобная антресоль (7,33 м2), где можно стоять в полный рост, несмотря на скатную кровлю А-фрейма. Здесь можно установить мансардные окна, что позволит любоваться звездным небом, лежа на кровати.</p>
+                </div>
             </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="catalog-thako.html"><img src="images/5-23.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="catalog-thako.html">Сайма</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">от 4 200 000₽ под ключ</a></li>
-                  <!-- <li>40 Sq. Ft.</li> -->
-                  <!-- <li>2 Bedrooms</li> -->
-                </ul>
-                <!-- <p>Perfect for those who love both city life and the countryside.</p> -->
-                <a class="button button-primary button-winona button-md" data-fancybox href="#modal">Записаться на экскурсию</a>
-
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="catalog-thako.html"><img src="images/IMG_7853-1-scaled.jpg.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="catalog-thako.html">Икша</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">от 8 200 000₽ под ключ</a></li>
-                  <!-- <li>50 Sq. Ft.</li> -->
-                  <!-- <li>4 Bedrooms</li> -->
-                </ul>
-                <!-- <p>Located in 5 mins from downtown, this property is great for anyone.</p> -->
-                <a class="button button-primary button-winona button-md" data-fancybox href="#modal">Записаться на экскурсию</a>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="catalog-thako.html"><img src="images/5-21.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="catalog-thako.html">Тахо</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">от 2 200 000₽ под ключ</a></li>
-                  <!-- <li>90 Sq. Ft.</li> -->
-                  <!-- <li>2 Bedrooms</li> -->
-                </ul>
-                <!-- <p>A luxury mansion for people who enjoy the high-end amenities.</p> -->
-                <a class="button button-primary button-winona button-md" data-fancybox href="#modal">Записаться на экскурсию</a>
-              </article>
-            </div>
-            <!-- <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view More properties</a></div> -->
           </div>
         </div>
       </section>
-      <section class="section novi-background section-lg bg-gray-100">
+
+      <section class="section novi-background section-sm">
         <div class="container">
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-5">
-              <h3 class="text-uppercase">О компании inHouse</h3>
-              <ul class="text-uppercase_ul">
-                <li>— Основой наших домов является усиленный каркас Halle из клееной тавровой балки заводского изготовления.</li>
-                <li>— Точность размеров и маркировка всех элементов каркаса обеспечивают высочайшую скорость и точность сборки.</li>
-                <li>— Самый современный утеплитель из полиэфирных волокон гарантирует комфорт и экономию в эксплуатации.</li>
-                <li>— Наши дома отвечают самым современным архитектурным трендам: много света, отличная эргономика пространства, только натуральные высококачественные материалы.</li>
-                <li>— Возможность создать индивидуальный проект!</li>
-              </ul>
-              <p class="about-subtitle">
-              inHouse – дома для тех, кто ценит комфорт.
-            </p>
+          <h3 class="text-center"><span class="wow slideInDown">Планировка дома</span></h3>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="images/94f754172fc3c380b358642221c18f22.png" data-fancybox="images_plane"><img class="img-centered wow slideInDown" src="images/94f754172fc3c380b358642221c18f22.png" alt="" width="770" height="456"></a>
             </div>
-            <div class="col-md-10 col-lg-6 col-xl-6"><img class="img-responsive" src="images/88d711e922b1e18e52c34ac0aaa21244.jpeg" alt="" width="570" height="388"/>
+            <div class="col-md-6">
+              <a href="images/7f69abc7a5f31b21369ed1735c47c2f6.png" data-fancybox="images_plane"><img class="img-centered wow slideInDown" src="images/7f69abc7a5f31b21369ed1735c47c2f6.png" alt="" width="770" height="456"></a>
             </div>
           </div>
         </div>
       </section>
-      <section class="section novi-background section-lg ">
+
+
+      <section class="section novi-background section-sm bg-gray-100">
         <div class="container">
-          <h3 class="text-uppercase font-weight-bold wow-outer text-center"><span class="wow slideInDown">Почему именно мы?</span></h3>
-          <div class="row row-30">
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-home wow fadeIn"></div>
-                <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown">Качество</h4>
-                  <p class="wow fadeInUpSmall">Изготовление и обработка всех элементов происходит в заводских условиях, что гарантирует высокую точность и 100% готовность к сборке.</p>
+          <h3 class="text-center"><span class="wow slideInDown">Комплектация</span></h3>
+          <p class="text-center post-modern-p" style="color: #228B22;">Дом сдается в чистовой отделке.</p>
+          <p class="text-center post-modern-p">Сразу после завершения строительства возможно обустройство мебелью.</p>
+<script>
+                      $(document).ready(function() {
+$(document).ready(function(){
+  var animTime = 300,
+      clickPolice = false;
+
+  $(document).on('touchstart click', '.acc-btn', function(){
+    if(!clickPolice){
+       clickPolice = true;
+
+      var currIndex = $(this).index('.acc-btn'),
+          targetHeight = $('.acc-content-inner').eq(currIndex).outerHeight();
+
+      $('.acc-btn h1').removeClass('selected');
+      $(this).find('h1').addClass('selected');
+
+      $('.acc-content').stop().animate({ height: 0 }, animTime);
+      $('.acc-content').eq(currIndex).stop().animate({ height: targetHeight }, animTime);
+
+      setTimeout(function(){ clickPolice = false; }, animTime);
+    }
+
+  });
+
+});
+
+});
+</script>
+
+          <div class="row">
+                <div class="col-md-12">
+
+<div class="acc-container">
+<div class="acc-btn"><p class="selected post-modern-p">ОПИСАНИЕ</p></div>
+<div class="acc-content open">
+  <div class="acc-content-inner">
+    <p class="post-modern-p">Тёплый дом для круглогодичного использования.</p>
+    <p class="post-modern-p">Свайный фундамент и каркас стен 150 мм, крепко сшитый снаружи плитами ОСП-9, делают дом прочным и долговечным.</p>
+    <p class="post-modern-p">Утепление пола, потолка под кровлей 200 мм + энергофлекс, а также окна с двойным стеклопакетом (3 стекла) позволяют создать комфортную температуру в любое время года.</p>
+    <p class="post-modern-p">Отделка стен – снаружи сайдинг, внутри вагонка 12,5 мм. Кровля – оцинкованный профнастил.</p>
+    <p class="post-modern-p">В доме есть всё необходимое для круглогодичного проживания.</p>
+  </div>
+</div>
+
+<div class="acc-btn"><p class="post-modern-p">ПОДРОБНОЕ ОПИСАНИЕ</p></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p class="post-modern-p"><span>Фундамент:</span> свайный 2,5 м с ростверком из профилированной трубы 80х80 мм (ниже глубины промерзания)</p>
+    <p class="post-modern-p"><span>Стены:</span>каркас — 150 мм. Отделка внутри вагонкой 12,5 мм, снаружи — сайдингом, утепление — 150 мм</p>
+    <p class="post-modern-p"><span>Кровля:</span>оцинкованный профнастил</p>
+
+    <br><p class="post-modern-p"><span>ПЕРВЫЙ ЭТАЖ:</span></p>
+    <p class="post-modern-p"><span>Полы:</span> утепление — 200 мм по энергофлексу, доска пола — 35 мм; обработка огнебиозащитой нижнего конструктива</p>
+    <p class="post-modern-p"><span>Стены:</span> утепление — 150 мм, отделка внутри вагонкой 12,5 мм, снаружи — сайдингом</p>
+    <p class="post-modern-p"><span>Перегородки:</span> каркас — 100 мм, отделка вагонкой 12,5 мм</p>
+    <p class="post-modern-p"><span>Потолок:</span> утепление — 50 мм, отделка вагонкой 12,5 мм</p>
+
+    <br><p class="post-modern-p"><span>ВТОРОЙ ЭТАЖ:</span></p>
+    <p class="post-modern-p"><span>Полы:</span> доска пола — 21 мм</p>
+    <p class="post-modern-p"><span>Стены:</span> утепление — 150 мм, отделка внутри вагонкой 12,5 мм, снаружи — сайдингом</p>
+    <p class="post-modern-p"><span>Перегородки:</span> каркас — 100 мм, отделка вагонкой 12,5 мм</p>
+    <p class="post-modern-p"><span>Потолок:</span> 200 мм, отделка вагонкой 12,5 мм</p>
+    <br>
+    <p class="post-modern-p"><span>Высота потолков:</span> первый этаж — 2,5 м; второй этаж — 2,9 м</p>
+    <p class="post-modern-p"><span>Окна:</span> пластиковые, с двойным стеклопакетом (3 стекла)</p>
+    <p class="post-modern-p"><span>Двери:</span> деревянные филенчатые</p>
+    <p class="post-modern-p"><span>Вентиляция:</span> проветривание</p>
+    <p class="post-modern-p"><span>Лестница:</span> одномаршевая с забежными ступенями</p>
+    <p class="post-modern-p"><span>Гидроизоляция:</span> гидроизоляция санузла есть</p>
+  </div>
+</div>
+
+<div class="acc-btn"><p class="post-modern-p">ИНЖЕНЕРНЫЕ КОММУНИКАЦИИ</p></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p class="post-modern-p"><span>Электрика:</span> распределительный щит 220 V с автоматикой, в каждом помещении — одна розетка, один выключатель и один патрон с лампочкой</p>
+    <p class="post-modern-p"><span>Водоснабжение:</span> разводка труб горячей и холодной воды открытым способом и системы канализации скрытым способом, установка гидроаккумулятора, водонагревателя и фильтра грубой очистки</p>
+    <p class="post-modern-p"><span>Отопление:</span> организация выделенной линии под конвекторы и установка конвекторов в каждом помещении</p>
+  </div>
+</div>
+
+<!-- <div class="acc-btn"><p class="post-modern-p">Praesent lobortis urna non est faucibus, vestibulum mattis diam sollicitudin.</p></div>
+<div class="acc-content">
+  <div class="acc-content-inner">
+    <p>Fusce eget ultricies ante. In augue urna, rhoncus ac tellus non, porta malesuada magna. Nulla tincidunt orci in metus rhoncus, at malesuada quam varius. Mauris sed tincidunt massa, ut cursus magna. Pellentesque cursus sapien turpis, id blandit magna tempus at.</p>
+  </div>
+</div> -->
+</div>
                 </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-leaf wow fadeIn" data-wow-delay=".1s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Экологичность</h4>
-                  <p class="wow fadeInUpSmall" data-wow-delay=".1s">Деревянная отделка наших домов обрабатывается натуральным маслом BIOFA, а материалы теплоизоляции не содержат вредных смесей и клеевых составов.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-rocket wow fadeIn" data-wow-delay=".1s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <h5 class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Скорость сборки</h5>
-                  <p class="wow fadeInUpSmall" data-wow-delay=".1s">Мы поставляем комплект готовых к сборке деталей из клееных профильных балок, без дополнительных запилов и подгонки под размер.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-checkmark-circle wow fadeIn"></div>
-                <div class="box-minimal-main wow-outer">
-                  <p class="box-minimal-title wow slideInDown">Работаем с материнским капиталом</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-checkmark-circle wow fadeIn" data-wow-delay=".1s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <p class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Помогаем сэкономить 13% на строительстве</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-checkmark-circle wow fadeIn" data-wow-delay=".1s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <p class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Строим в кредит и ипотеку</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-checkmark-circle wow fadeIn" data-wow-delay=".1s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <p class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Даем скидки на страхование дома</p>
-                </div>
-              </article>
             </div>
           </div>
         </div>
       </section>
-      <!-- Services-->
 
-      <section class="section novi-background bg-gray-100 section-lg">
-        <div class="container">
-          <h3 class="text-uppercase font-weight-bold wow-outer text-center"><span class="wow slideInDown">Этапы работ</span></h3>
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-5 post-modern wow slideInRight">
-              <h3 class="text-uppercase">1. Заявка</h3>
-              <p class="about-subtitle">
-               Мы свяжемся с вами, выясним потребности, поможем подобрать готовый проект или заполним с вами бриф для составления задания на проектирование.
-              </p>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-6  post-modern wow slideInLeft"><img class="img-responsive" src="images/1d04c2a7abc51296737d21932aecc777-1024x702.jpg" alt="" width="570" height="388"/>
-            </div>
-          </div>
-
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-6 post-modern wow slideInRight"><img class="img-responsive" src="images/poperedniy-dohovir-kupivli-prodazhu-kvartyry.jpg" alt="" width="570" height="388"/>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-5 post-modern wow slideInLeft">
-              <h3 class="text-uppercase">2. Договор</h3>
-              <p class="about-subtitle">
-                Псогласуем с вами все пункты Договора. Зафиксируем стоимость. Цена не изменится до сдачи дома.
-              </p>
-            </div>
-          </div>
-
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-5 post-modern wow slideInRight">
-              <h3 class="text-uppercase">3. Производство, фундамент, комплектация</h3>
-              <ul class="text-uppercase_ul">
-                <li>— Запуск в производство силового каркаса, покраски изделий отделки фасадов, террасы, интерьера.</li>
-                <li>— Установка фундамента</li>
-                <li>— Размещение заказов на комплектацию домокомплекта</li>
-              </ul>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-6 post-modern wow slideInLeft"><img class="img-responsive" src="images/plitny_fundament_gotovy.jpg" alt="" width="570" height="388"/>
-            </div>
-          </div>
-
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-6 post-modern wow slideInRight"><img class="img-responsive" src="images/61178737b43c383bb3823521_IMG_4104_.jpg" alt="" width="570" height="388"/>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-5 post-modern wow slideInLeft">
-              <h3 class="text-uppercase">4. Сборка комплектации «Теплый контур»</h3>
-              <ul class="text-uppercase_ul">
-                <li>— Монтаж каркаса со стропильной системой</li>
-                <li>— Устройство гидроизоляции и пароизоляции</li>
-                <li>— Утепление стен, кровли и перекрытий</li>
-                <li>— Отделка внешних стен, монтаж покрытия террасы, балкона, крыльца</li>
-                <li>— Монтаж кровли, водосточной системы и элементов безопасности</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-5 post-modern wow slideInRight">
-              <h3 class="text-uppercase">5. Монтаж инженерных сетей (линейная часть)</h3>
-              <ul class="text-uppercase_ul">
-                <li>— Скрытая электропроводка</li>
-                <li>— Трубопровод водоснабжения и отопления</li>
-                <li>— Канализация</li>
-                <li>— Нагрев воды</li>
-                <li>— Отопление</li>
-                <li>— Вентиляция</li>
-              </ul>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-6 post-modern wow slideInLeft"><img class="img-responsive" src="images/unnamed.jpg" alt="" width="570" height="388"/>
-            </div>
-          </div>
-
-          <div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-            <div class="col-md-10 col-lg-6 col-xl-6 post-modern wow slideInRight"><img class="img-responsive" src="images/5-26.jpg.jpg" alt="" width="570" height="388"/>
-            </div>
-            <div class="col-md-10 col-lg-6 col-xl-5 post-modern wow slideInLeft">
-              <h3 class="text-uppercase">6. Сборка комплектации »Подключ»</h3>
-              <ul class="text-uppercase_ul">
-                <li>— Чистовая отделка стен</li>
-                <li>— Чистовая отделка потолков</li>
-                <li>— Монтаж напольного покрытия</li>
-                <li>— Монтаж лестницы</li>
-                <li>— Установка межкомнатных дверей</li>
-                <li>— Монтаж оконечных устройств инженерных сетей</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section novi-background">
         <div class="range justify-content-xl-between">
           <div class="cell-xl-6 align-self-center container">
@@ -526,7 +485,7 @@
           </div>
         </div>
       </section> -->
-                <div class="section-lg" id="modal" style="display:none">
+                <div class="section-lg" id="modal"  style="display:none">
                   <h3 class="text-uppercase wow-outer"><span>Оставьте заявку</span></h3>
                   <!-- RD Mailform-->
                   <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
@@ -624,8 +583,6 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!-- Javascript-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
