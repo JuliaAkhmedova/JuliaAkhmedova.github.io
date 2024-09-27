@@ -3437,6 +3437,7 @@ textarea.form-control {
             border-radius: 10px;
             background: #Fff;
             color: #3380d3;
+            min-height: 500px;
           }
           .label1 {
               display: flex;
@@ -3512,6 +3513,7 @@ textarea.form-control {
               border-radius: 10px;
               background: #Fff;
               color: #3380d3;
+              min-height: 500px;
             }
 
             .ratestable {
