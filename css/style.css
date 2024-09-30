@@ -2557,11 +2557,14 @@ h1, h2, h3, h4, h5,
   .aside-stretch-2:after {
     position: absolute;
     top: 0;
-    right: 100%;
+    right: 0;
     bottom: 0;
     content: '';
     width: 360%;
-    background: #3380d3; }
+    background: #3380d3;
+    background-image: url(https://cdnn21.img.ria.ru/images/07e7/07/13/1885094789_0:0:3475:2047_1920x0_80_0_0_92ee0c9af15ddd8e967696cd71bb5a76.jpg);
+    background-size: cover;
+  }
   @media (max-width: 767.98px) {
     .aside-stretch-2 {
       background: transparent; }
@@ -3679,3 +3682,6 @@ color: #3380d3;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
+.pxy-20{
+  padding: 50px 0;
+}
