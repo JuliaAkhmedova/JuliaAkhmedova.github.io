@@ -979,6 +979,12 @@ section,
   margin-bottom: 1rem;
   display: inline-block;
 }
+.company-meta {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 .about .about-title {
   font-size: 1.75rem;
