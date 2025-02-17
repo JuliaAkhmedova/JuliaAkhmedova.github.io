@@ -571,7 +571,7 @@ h6 {
 }
 
 .footer .copyright {
-  padding: 25px 0;
+  padding: 3rem 0;
   border-top: 1px solid var(--accent-color);
 }
 
@@ -2142,7 +2142,7 @@ section,
 }
 
 .contact .contact-form {
-  background-color: color-mix(in srgb, #1a181b, transparent 5%);;
+  background-color: color-mix(in srgb, #1a181b, transparent 5%);
   padding: 3rem;
   border-radius: 1rem;
   height: 100%;
@@ -2483,6 +2483,13 @@ img{
     border: none;
     background:
     color-mix(in srgb, #1a181b, transparent 5%);
+    box-shadow: none !important;
+}
+.modal_window input:active,.modal_window input:hover,.modal_window input:focus,
+textarea.form-control:active,textarea.form-control:hover,textarea.form-control:focus
+{
+   background-color: color-mix(in srgb, #1a181b, transparent 5%);
+   border: 1px solid var(--accent-color);
 }
 textarea.form-control{
     border-bottom: 1px solid var(--accent-color) !important;
@@ -2490,6 +2497,7 @@ textarea.form-control{
     border-top: none;
     border-left: none;
     background: color-mix(in srgb, #1a181b, transparent 5%);
+    box-shadow: none !important;
 }
 
 .modal_button:hover{
