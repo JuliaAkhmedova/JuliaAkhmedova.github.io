@@ -2188,11 +2188,13 @@ section,
 }
 
 .contact .contact-form .form-control::placeholder,
-.contact .contact-form .form-select::placeholder {
+.contact .contact-form .form-select::placeholder,
+.modal_window input::placeholder,
+textarea.form-control::placeholder {
   color: #ffffffa1;
 }
 
-.contact .contact-form .btn {
+.contact .contact-form .btn, .btn_quest {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 0.5rem 2rem;
@@ -2385,7 +2387,7 @@ section,
 @media (min-width: 768px) {
 
 .footer::before{
-  content: "\f589";
+  content: url('../img/ricon.png');
   font-family: bootstrap-icons !important;
   position: absolute;
   top: -5rem;
@@ -2398,7 +2400,7 @@ section,
   animation-iteration-count: infinite;
 }
 .icon-left::before{
-  content: "\f589";
+  content: url('../img/ricon.png');
   font-family: bootstrap-icons !important;
   position: absolute;
   top: 10rem;
@@ -2412,17 +2414,15 @@ section,
 }
 
 @keyframes myAnimation {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  50% {
+    transform: translate3d(0, 0%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0%, 0);
+  }
 }
 }
 
@@ -2462,4 +2462,183 @@ ul>li>span>strong{
 }
 img{
   border-radius: 10px;
+}
+
+.modal_button{
+    border: none;
+    background: var(--accent-color);
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.modal_window{
+    color: #ffffffa1;
+    background-color: color-mix(in srgb, #1a181b, transparent 5%);
+    border: 1px solid var(--accent-color);
+    text-align: center;
+}
+
+.modal_window input{
+    border-bottom: 1px solid var(--accent-color) !important;
+    border: none;
+    background:
+    color-mix(in srgb, #1a181b, transparent 5%);
+}
+textarea.form-control{
+    border-bottom: 1px solid var(--accent-color) !important;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    background: color-mix(in srgb, #1a181b, transparent 5%);
+}
+
+.modal_button:hover{
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+.modal-header{
+  border: none;
+}
+
+.bg_black{
+  background-color: color-mix(in srgb, #1a181b, transparent 5%) !important;
+  background-image: none;
+}
+.f-thumbs__slide__button{
+    width: 95px;
+    height: 90px;
+}
+.product_closed{
+    display: flex;
+    justify-content: end;
+    height: 100px;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.product_size,.product_color{
+  list-style-type: none;
+  display: flex;
+  justify-content: normal;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.product_color{
+  margin-bottom: 1rem;
+}
+.product_size li{
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin-left: 5px;
+}
+.product_color label{
+  width: 35px;
+  height: 35px;
+}
+.product_color li:hover{
+  opacity: 0.2;
+}
+.product_attr{
+  font-weight: 500;
+  color: color-mix(in srgb, #1a181b, transparent 5%);
+}
+.product_size li:hover,.product_size li:focus,.product_size li:active{
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+.product_price{
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--accent-color);
+}
+.prodict_button{
+  color: var(--contrast-color);
+    font-size: 1rem;
+    background: var(--accent-color);
+    padding: 10px 40px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+
+
+.form_radio_btn {
+  display: inline-block;
+  margin-right: 10px;
+}
+.form_radio_btn input[type=radio] {
+  display: none;
+}
+.form_radio_btn label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  user-select: none;
+}
+
+/* Checked */
+#white + label {
+  background: #fff;
+  border: 1px solid #black !important;
+}
+#black + label {
+  background-color: black;
+  border: 1px solid black;
+}
+#yellow + label {
+  background-color: #f0e71c;
+  border: 1px solid #f0e71c !important;
+}
+
+#green + label {
+  background-color: #146719;
+  border: 1px solid #146719 !important;
+}
+#red + label {
+  background-color: #d00616;
+  border: 1px solid #d00616 !important;
+}
+#orange + label {
+  background-color: #f55b05;
+  border: 1px solid #f55b05 !important;
+}
+#orange2 + label {
+  background-color: #FF6800;
+  border: 1px solid #FF6800 !important;
+}
+#gray + label {
+  background-color: #a1a2a4;
+  border: 1px solid #a1a2a4 !important;
+}
+#blue + label {
+  background-color: #2959ED;
+  border: 1px solid #2959ED !important;
+}
+#olive + label{
+  background-color: #78925F;
+  border: 1px solid #78925F !important;
+}
+.form_radio_btn input[type=radio]:checked + label {
+  opacity: 0.2;
+}
+/* Hover */
+.form_radio_btn label:hover {
+  opacity: 0.2;
+}
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+  background: #efefef;
+  color: #666;
+}
+.product_description{
+  margin-top: 2rem;
+}
+.mb-3rem{
+  margin-bottom: 3rem;
 }
