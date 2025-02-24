@@ -2644,6 +2644,9 @@ textarea.form-control{
   background: #efefef;
   color: #666;
 }
+.product_description_a{
+  font-size: 1.3rem;
+}
 .product_description{
   margin-top: 2rem;
 }
